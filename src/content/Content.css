@@ -1,0 +1,122 @@
+.card {
+    background: transparent;
+    border-radius: 10px;
+    width: 67%;
+    margin: 10px auto 0px auto;
+    padding: 0px 5px 0px 5px;
+}
+
+.card:hover {
+    background: transparent;
+    outline: 2px var(--app-front-background-color) solid;
+}
+
+.preview-post {
+    color: rgb(36, 36, 36);
+    background: transform;
+    min-height: 200px;
+    margin: 0px 20px 0px 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+.t {
+    height: 900px;
+}
+
+.type-post {
+    background-color: var(--app-front-background-color);
+    border-radius: 17px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    transition: all 300ms;
+}
+
+.type-post:hover {
+    background-color: rgb(217, 255, 249);
+}
+
+.type-post p {
+    color: black;
+    font-size: 12px;
+    transition: all 300ms;
+}
+
+.type-post:nth-child(2) {
+    background: transparent;
+    margin-left: 10px;
+}
+
+.center-front {
+    background: transform;
+    width: 100%;
+}
+
+.oops {
+    /* background-color: rgb(160, 105, 105); */
+    width: 200px;
+    text-align: center;
+    margin: 50px auto 0px auto;
+    padding: 40px 20px 40px 20px;
+}
+
+.oops p {
+    background: linear-gradient(130deg, #222222, #666666, #cecece);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+.oops p:first-child {
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+@-webkit-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
