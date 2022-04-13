@@ -1,7 +1,7 @@
 # Karina
 `"gh-pages"` + `"react"` + `"react router"`
 
-<p align="center"><img width="600px" src="assets/screenshot-1.jpg" alt="puppet core"></p>
+<p align="center"><img width="" src="assets/screenshot-1.jpg" alt="puppet core"></p>
 
 ### Props
 ```
