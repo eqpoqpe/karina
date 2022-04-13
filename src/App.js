@@ -27,12 +27,10 @@ function App(props) {
 
   return (
     <div className="App">
-      {/* <Sponger> */}
         <Header />
         <DataContext.Provider value={{ data, paths, tables }}>
           <Router table={tables} />
         </DataContext.Provider>
-      {/* </Sponger> */}
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { DataContext, Sponger } from "../../App";
-import { createSponge } from "sponge";
+import { DataContext, Sponger } from "../App";
 import "./Content.css";
 
 function Card() {
