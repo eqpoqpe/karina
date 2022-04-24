@@ -6,6 +6,7 @@ import { fetchData } from "./data";
 import "./App.css";
 
 const DataContext = React.createContext();
+const Sponger = createSponge();
 
 function App(props) {
   const [data, setData] = useState([]);
