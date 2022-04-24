@@ -34,8 +34,5 @@ function App(props) {
 }
 
 export default App;
-<<<<<<< HEAD
+
 export { DataContext, Sponger };
-=======
-export { DataContext };
->>>>>>> 51fa5457c4e67b4d0fbe080e7b672b0c2cc91763
