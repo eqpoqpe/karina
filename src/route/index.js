@@ -15,16 +15,16 @@ export default function Router(props) {
       <Route path="/" element={<><Outlet /></>}>
         <Route index element={<Defrouter />} />
         <Route path="home" element={
-          <Suspense fallback={<>Loading</>}>
-            <Front type={"home"} table={props.table}/>
-          </Suspense>
-        }>
-          <Route index element={<Decorate><Card /></Decorate>} />
-          <Route path=":slug" element={<Post />} />
-        </Route>
+            <Suspense fallback={<>Loading</>}>
+              <Front type={"home"} table={props.table} />
+            </Suspense>
+          }>
+              <Route index element={<Decorate><Card /></Decorate>} />
+              <Route path=":slug" element={<Post />} />
+          </Route>
         <Route path="project" element={
           <Suspense fallback={<>Loading</>}>
-            <Front type={"project"} table={props.table}/>
+            <Front type={"project"} table={props.table} />
           </Suspense>
         }>
           <Route index element={<Decorate><Card /></Decorate>} />
@@ -32,7 +32,7 @@ export default function Router(props) {
         </Route>
         <Route path="api" element={
           <Suspense fallback={<>Loading</>}>
-            <Front type={"api"} table={props.table}/>
+            <Front type={"api"} table={props.table} />
           </Suspense>
         }>
           <Route index element={<Decorate><Card /></Decorate>} />

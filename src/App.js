@@ -3,17 +3,15 @@ import { Header } from "./front";
 import Router from "./route";
 import { getLegalPath } from "./util";
 import { fetchData } from "./data";
-import { createSponge } from "sponge";
 import "./App.css";
 
 const DataContext = React.createContext();
-const Sponger = createSponge();
 
 function App(props) {
   const [data, setData] = useState([]);
   const [paths, setPath] = useState([]);
   const [tables, setTable] = useState(21);
-
+  
   useEffect(() => {
     fetchData(
       "https://eqpo.ml/-/display.json",
@@ -36,4 +34,8 @@ function App(props) {
 }
 
 export default App;
+<<<<<<< HEAD
 export { DataContext, Sponger };
+=======
+export { DataContext };
+>>>>>>> 51fa5457c4e67b4d0fbe080e7b672b0c2cc91763

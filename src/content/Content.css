@@ -4,11 +4,15 @@
     width: 67%;
     margin: 10px auto 0px auto;
     padding: 0px 5px 0px 5px;
+    transition:
+        all 300ms,
+        outline 0ms;
 }
 
 .card:hover {
     background: transparent;
     outline: 2px var(--app-front-background-color) solid;
+    transform: scale(1.01);
 }
 
 .preview-post {
@@ -17,7 +21,9 @@
     min-height: 200px;
     margin: 0px 20px 0px 20px;
     padding: 20px 0px 20px 0px;
+    transition: all 300ms;
 }
+
 
 .t {
     height: 900px;

@@ -1,14 +1,19 @@
 import { useEffect } from "react";
+<<<<<<< HEAD
 import { Link, useParams } from "react-router-dom";
 import { DataContext, Sponger } from "../App";
 // import { scrollTo } from "sponge-dev-0.0.3";
+=======
+import { Link, useLocation, useParams } from "react-router-dom";
+import { DataContext } from "../App";
+>>>>>>> 51fa5457c4e67b4d0fbe080e7b672b0c2cc91763
 import "./Content.css";
 
 function Card() {
   const _ = (props, index) => {
     return (
       <div className="card" key={`${props.rid}${index}`}>
-        <Link to={`${props.rid}`}>
+        <Link to={`${props.rid}`} state={[window.scrollX, window.scrollY]}>
           <div className="preview-post">
             <h2>{props.title}</h2>
             <p>{props.context}</p>
@@ -49,8 +54,16 @@ function Decorate(props) {
 
 const Post = () => {
   const { slug } = useParams();
+  const { state } = useLocation();
 
+<<<<<<< HEAD
   useEffect(() => { Sponger.to(); }, []);
+=======
+  useEffect(() => {
+    console.log(state);
+    window.scrollTo(state[0], state[1]);
+  }, []);
+>>>>>>> 51fa5457c4e67b4d0fbe080e7b672b0c2cc91763
 
   return (
     <div className="preview-post">
