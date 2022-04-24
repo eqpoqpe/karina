@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { DataContext, Sponger } from "../App";
+// import { scrollTo } from "sponge-dev-0.0.3";
 import "./Content.css";
 
 function Card() {
@@ -49,10 +50,7 @@ function Decorate(props) {
 const Post = () => {
   const { slug } = useParams();
 
-  useEffect(() => {
-    const [x, y] = Sponger.to();
-    window.scrollTo(x, y);
-  }, []);
+  useEffect(() => { Sponger.to(); }, []);
 
   return (
     <div className="preview-post">
