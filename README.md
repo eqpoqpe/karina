@@ -1,9 +1,5 @@
 # Karina
-`gh-pages`
-
-`react`
-
-`react router`
+`gh-pages` `react` `react router`
 
 <p align="center"><img width="" src="assets/screenshot-2.jpg" alt="puppet core"></p>
 
